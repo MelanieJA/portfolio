@@ -103,6 +103,7 @@ body{
   width: 100%;
   margin: 0 auto;
   background: #f7f7f9;
+  
 }
 
 h4{
@@ -150,7 +151,12 @@ h4{
      list-style: none;
    }
 
+   /*.mel {
+     border-bottom: 3px solid #e8b4a2;
+     padding-bottom: 5px;
+   } */
 
+   
 /*===========================================================================
 Header styles
 ============================================================================= */
@@ -195,7 +201,9 @@ Header styles
     position: fixed;
     top:0; 
     left:0;
-    width: 100%; }
+    width: 100%;
+    border-bottom: 1px solid #e8b4a2
+  }
 
 nav{
   width: 100%;
@@ -222,7 +230,7 @@ background-color: #b3d4fc;
 
 .headline{
   padding: 100px 0px;
-  width: 90%;
+  width: 70%;
 }
 
 h4 a{
@@ -236,7 +244,7 @@ h4 a:hover{
 }
 
 h1{
-  font-size: ;
+  font-size: 2.25em;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -343,20 +351,23 @@ a.button1 {
 padding-bottom: 40px;
 }
 
-.contact-blurb a{
+.email a{
   font-family: 'Lato', sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
   text-decoration: none;
   color: #606060;
   text-align: center;
 }
 
 #envelope{
-  max-width: 6%;
+  max-width: 5%;
   height: auto;
-  margin-right: 10px;
-  margin-left: 50px;
+  
 }
+
+.email{ text-align: center;}
+
+.social-images{ text-align: center;}
 
 #mail {
   text-align: center;
@@ -385,10 +396,7 @@ footer {
 }
 /*
   @media all and (max-width:30em){
-   a.button1{
-      display:block;
-      margin:0.2em auto;
-   }
+ 
 
   }
 
@@ -559,9 +567,89 @@ header{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+  html{
+    font-size: 1em;
+  }
+
+  
+  .sticky {
+    width: 90%;
+    display: flex;
+  }
+
+  .fixed {
+    width: 100%;
+  }
+  
+
+  .half-width{
+    flex-flow: row wrap; 
+    justify-content: space-between;
+  }
+
+  .half-width h4{
+    padding: 0;
+    margin: 0;
+  }
+
+  .headline{
+    max-width: 70%;
+  }
+
+  ul li a {
+    padding: 0;
+  }
+
+  #about, #work {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #skills,
+  #contact{
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  .contact-details {
+    display: flex;
+    align-items: center;
+  }
+
+  #envelope{ 
+    margin: 0;
+    max-width:;
+  }
+
+  .social-icons a {
+  
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
