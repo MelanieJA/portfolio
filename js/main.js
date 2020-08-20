@@ -1,3 +1,6 @@
+
+
+$(document).ready(function(){ 
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
              // IE Fallback
@@ -39,9 +42,15 @@ function isElementInViewport(el) {
   );
 }
 
-$(function() {
-    $('a[href*=#]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-    });
-  });
+
+var stickyOffset = $('.sticky').offset().top;
+
+$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= stickyOffset) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+
+})

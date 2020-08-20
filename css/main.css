@@ -168,18 +168,32 @@ Header styles
 
 .half-width{
   display: flex;
-  margin:  0px 0px 0px;
+  margin:  0px auto;
   padding: 10px;
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 80%;
+  width: 100%;
+
   
 }
 
 .half-width h4{
   margin: 0 20px;
 }
+
+.sticky {
+  position: fixed;
+  margin: 0 auto;
+  z-index:1;  /* places this element on top of anything else when scrolling eg so images dont appear on top of the nav */
+
+}
+
+  .fixed {
+    position: fixed;
+    top:0; 
+    left:0;
+    width: 100%; }
 
 nav{
   width: 100%;
@@ -434,53 +448,9 @@ header{
 /*===================Header Scroll======================*/
 
 
-.demo a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
-}
-.demo a:hover {
-  opacity: .5;
-}
 
 
-#section02 a {
-  padding-top: 60px;
-}
-#section02 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section02 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
+
 
 
 
