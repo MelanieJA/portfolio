@@ -224,7 +224,7 @@ nav ul a{
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
   padding: 10px 15px;
-  font-weight: bold;
+  
 }
 
 nav ul a:hover{
@@ -253,7 +253,8 @@ h1{
   padding-top: 20%;
 }
 
-.buttons{
+.buttons,
+.p-button{
   text-align: center;
 }
 
@@ -261,7 +262,7 @@ h1{
 a.button1 {
   display: inline-block;
   padding: 10px 20px;
-  margin:0 15px;;
+  margin:0 15px;
   border-radius:2em;
   box-sizing: border-box;
   text-decoration:none;
@@ -274,6 +275,24 @@ a.button1 {
 
   a.button1:hover{
     background-color: #b3d4fc;
+  }
+/*=================== project buttons ========================= */
+  .p-button{
+    margin-bottom:50px;
+  }
+
+  .p-button a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Raleway',sans-serif;
+    color:#212121;
+    background-color:#e8b4a2;
+    text-align:center;
+    transition: all 0.2s;
   }
   
 
@@ -311,9 +330,9 @@ a.button1 {
   padding: 60px 0;
 }
 
-  }
   #work{
     margin-bottom: 60px;
+    margin-left:20px;  
   }
 
   #contact{
@@ -345,10 +364,6 @@ a.button1 {
   height: auto;
 }
 
-#contact{
-  display: flex;
-  flex-flow: column wrap;
-}
 
 .contact-blurb p {
 padding-bottom: 40px;
@@ -383,7 +398,7 @@ padding-bottom: 40px;
 .social {
   max-width: 20%;
   height: auto;
-  margin: 40px 30px;
+  margin: 40px 0px;
 }
 
 
@@ -397,9 +412,6 @@ footer {
   text-align: center;
   padding: 20px 0
 }
-
-
-
 
 /*================== Form styling ============ */
 /*
@@ -663,26 +675,23 @@ footer {
   .contact-details {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   #envelope{ 
     margin: 0;
-    max-width:;
+    max-width: 15%;
   }
 
-  .social-icons a {
-  
+  .social {
+    max-width: 45%;
+    margin: 0 10px;
   }
 }
 
 
-
-
-
-
-
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px){
 
 /****** Width styling ********/
 
@@ -716,9 +725,6 @@ footer {
 .project-image{
   width: 59%;}
 
-}
-
-
 /****** contact section *******/
 .fullscrn {
   display: flex;
@@ -741,10 +747,11 @@ footer {
   font-size: 1.32em;
 }
 
-.social-images li a {}
+.social-images{
+  padding-top: 20px;
+}
 
-
-
+}
 
 
 @media print,
