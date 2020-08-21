@@ -166,6 +166,7 @@ Header styles
 .hero{
   background-image: url(../img/background-mask.png);
   background-size: cover;
+  min-height: 600px;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -229,8 +230,8 @@ background-color: #b3d4fc;
 }
 
 .headline{
-  padding: 100px 0px;
-  width: 70%;
+  padding: 90px 0px;
+  width: 75%;
 }
 
 h4 a{
@@ -571,7 +572,7 @@ header{
   /* Style adjustments for viewports that meet the condition */
 
   html{
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   
@@ -588,6 +589,7 @@ header{
   .half-width{
     flex-flow: row wrap; 
     justify-content: space-between;
+    padding: 18px 0;
   }
 
   .half-width h4{
@@ -595,8 +597,13 @@ header{
     margin: 0;
   }
 
+  
   .headline{
     max-width: 70%;
+  }
+
+  h1{
+    padding-top: 90px;
   }
 
   ul li a {
