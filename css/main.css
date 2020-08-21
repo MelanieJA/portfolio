@@ -654,7 +654,7 @@ footer {
 
   ul li a {
     padding: 0;
-    font-weight: bold;
+  
   }
 
   /**** Width styling *****/
@@ -744,7 +744,7 @@ footer {
 }
 
 .email a{
-  font-size: 1.32em;
+  font-size: 1em;
 }
 
 .social-images{
