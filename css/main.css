@@ -589,7 +589,7 @@ header{
   .half-width{
     flex-flow: row wrap; 
     justify-content: space-between;
-    padding: 18px 0;
+    padding: 10px 0;
   }
 
   .half-width h4{
@@ -643,8 +643,35 @@ header{
 
 
 
+@media only screen and (min-width: 1024px) {
 
+ #about {
+    width: 60%;
+ }
 
+ #skills,
+ #contact{
+   width: 45%;
+ }
+
+ #work{
+   width: 80%;
+ }
+ .project1,
+ .project2,
+ .project3 {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px 0;
+ }
+
+.project-info{
+  width: 40%;
+}
+
+.project-image{
+  width: 59%;}
 
 
 
